@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Party Ruse - Най-добрите услуги за рождени дни и събития в Русе, България.">
+    <meta name="keywords" content="Рожден ден, събития, парти, Русе, организиране на събития, Bulgaria">
+    <title>Party Ruse - Организиране на Рождени дни и Събития</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            margin-bottom: 20px;
+        }
+        .hero {
+            background-image: url('/images/party-background2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+        .hero .container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero a.btn-primary {
+            background-color: #ff6b6b;
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        .hero a.btn-primary:hover {
+            background-color: #fa5252;
+        }
+        .services {
+            padding: 40px 0;
+        }
+        .services h3 {
+            font-size: 1.5rem;
+        }
+        .services i {
+            font-size: 2rem;
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+        .testimonials {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .testimonials .carousel-item blockquote {
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        .contact {
+            padding: 40px 0;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 10px;
+        }
+        .navbar-brand img {
+            max-height: 40px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="70">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo-transparent.png" alt="Party Ruse Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#testimonials">Отзиви</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Контакти</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Добре дошли в Party Ruse</h1>
+            <p>Ние правим всяко празненство незабравимо</p>
+            <a href="#services" class="btn btn-primary">Нашите услуги</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services text-center">
+        <div class="container">
+            <h2 class="mb-4">Нашите услуги</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-birthday-cake"></i>
+                    <h3>Рождени дни</h3>
+                    <p>От планиране до изпълнение, ние правим рождения ви ден магичен.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-building"></i>
+                    <h3>Корпоративни събития</h3>
+                    <p>Организирайте следващото голямо събитие на вашата компания с професионален подход.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-glass-cheers"></i>
+                    <h3>Частни празненства</h3>
+                    <p>Всяко празненство е важно, а ние го правим безпроблемно и незабравимо.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section with Carousel -->
+    <section id="testimonials" class="testimonials text-center">
+        <div class="container">
+            <h2 class="mb-4">Какво казват нашите клиенти</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Party Ruse направи рождения ден на дъщеря ми като вълшебна приказка!"</p>
+                            <footer class="blockquote-footer">Мария Иванова</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p class="mb-0">"Горещо препоръчвам услугите им за корпоративни събития!"</p>
+                            <footer class="blockquote-footer">Стефан Георгиев</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Form -->
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h2 class="mb-4">Свържете се с нас</h2>
+            <p>Готови ли сте да организирате следващото си голямо събитие? Свържете се с нас още днес!</p>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Вашето име" aria-label="Вашето име">
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" placeholder="Вашият имейл" aria-label="Вашият имейл">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4" placeholder="Вашето съобщение" aria-label="Вашето съобщение"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Изпрати</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Party Ruse. Всички права запазени.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script>
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                navbar.style.top = '-80px';
+            } else {
+                navbar.style.top = '0';
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
+</body>
+</html>
